@@ -1,0 +1,390 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  background: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.login-container {
+  width: 350px;
+  margin: 100px auto;
+  padding: 30px 25px;
+
+  background: rgba(255, 255, 255, 0.56);
+  border-radius: 16px;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  backdrop-filter: blur(7.1px);
+  -webkit-backdrop-filter: blur(7.1px);
+
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.login-container h1 {
+  font-family: "Georgia", serif;
+  font-size: 28px;
+  margin: 0 0 25px 0;
+  color: #2c3e50;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-family: inherit;
+
+  background: rgba(255, 255, 255, 0.724);
+
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+  outline: none;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+  border-color: #5d3ccc;
+
+  box-shadow: 0 0 6px rgba(93, 60, 204, 0.5);
+
+  outline: none;
+}
+
+.options {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 13px;
+}
+
+/* Remember me */
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  white-space: nowrap;
+}
+
+/* Checkbox */
+
+.options input[type="checkbox"] {
+  margin: 0;
+}
+
+/* Forgot password */
+
+.options a {
+  text-decoration: none;
+  color: #228dae;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+
+  background: #eefff5;
+  color: #000;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-family: inherit;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #5d3ccc;
+  color: #fff;
+}
+
+.register {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.register a:hover {
+  text-decoration: underline;
+}
+
+.register-container {
+  width: 400px;
+  margin: 100px auto;
+  padding: 35px 30px;
+
+  background: rgba(255, 255, 255, 0.56);
+
+  border-radius: 16px;
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+  backdrop-filter: blur(7.1px);
+  -webkit-backdrop-filter: blur(7.1px);
+
+  border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.register-container h1 {
+  font-family: "Georgia", serif;
+  font-size: 28px;
+
+  margin: 0 0 25px 0;
+
+  color: #2c3e50;
+}
+
+.register-form {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-form label {
+  text-align: left;
+
+  font-weight: bold;
+
+  color: #34495e;
+
+  font-size: 14px;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="tel"],
+.register-form input[type="password"] {
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  font-size: 14px;
+  font-family: inherit;
+
+  background: rgba(255, 255, 255, 0.9);
+
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+  outline: none;
+}
+
+.register-form input[type="text"]:focus,
+.register-form input[type="email"]:focus,
+.register-form input[type="tel"]:focus,
+.register-form input[type="password"]:focus {
+  border-color: #5d3ccc;
+
+  box-shadow: 0 0 6px rgba(93, 60, 204, 0.5);
+
+  outline: none;
+}
+
+.register-btn {
+  width: 100%;
+
+  padding: 12px;
+
+  background: #eefff5;
+  color: #000;
+
+  border: none;
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-family: inherit;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.register-btn:hover {
+  background: #5d3ccc;
+  color: #fff;
+}
+
+.login-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-link a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .login-container {
+    width: 90%;
+    margin: 50px auto;
+    padding: 25px 20px;
+  }
+
+  .register-container {
+    width: 90%;
+    margin: 50px auto;
+    padding: 25px 20px;
+  }
+}
+
+/* Input box with icon */
+.input-box {
+  position: relative;
+  width: 100%;
+}
+
+/* Input fields */
+.input-box input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.9);
+
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  outline: none;
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Icon */
+.input-icon {
+  position: absolute;
+
+  right: 12px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  color: #484343;
+
+  pointer-events: none;
+}
+
+/* Input focus */
+.input-box input:focus {
+  border-color: #5d3ccc;
+
+  box-shadow: 0 0 6px rgba(93, 60, 204, 0.5);
+}
+
+.register-form label.error {
+  display: block;
+  color: #d00000;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.register-form input.error {
+  border: 1px solid #d00000;
+}
+
+.register-form input.valid {
+  border: 1px solid green;
+}
+
+.login-form label.error {
+  display: block;
+  color: #d00000;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.login-form input.error {
+  border: 1px solid #d00000;
+}
+
+.login-form input.valid {
+  border: 1px solid green;
+}
+
+#loginMessage {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+#loginButton:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.login-btn.locked {
+  background-color: red;
+  color: white;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.login-btn:disabled {
+  background-color: red !important;
+  color: white;
+  cursor: not-allowed;
+  opacity: 1;
+}
